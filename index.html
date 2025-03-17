@@ -3,17 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Anthony Casper - Portfolio</title>
+    <!-- Bootstrap CSS for styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to My Portfolio</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Anthony Casper</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience-projects"
+                >Experience & Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills-tools">Skills & Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="hero-section text-center text-white d-flex align-items-center"
+    >
+      <div class="container">
+        <h1 class="display-4">Portfolio</h1>
+        <p class="lead">
+          Thank you for visiting my little corner of the internet. We might just
+          be 1’s and 0’s here, but it’s the stories, ideas, and connections we
+          share that make this space feel alive.
+        </p>
+      </div>
+      <div class="cloud-container"></div>
     </header>
-    <main>
-      <p>This is the starting point of my website.</p>
-    </main>
-    <footer>
-      <p>&copy; 2025 Anthony Casper</p>
-    </footer>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 container text-center">
+      <h2>About Me</h2>
+      <img
+        src="./images/profile.jpg"
+        alt="Anthony Casper"
+        class="img-fluid rounded-circle mb-3"
+        width="150"
+      />
+      <p>
+        Hi, I’m Anth – a designer based in Portland with a Bachelor’s in
+        Computer Science from Portland State University. I love creating and
+        exploring the internet with curiosity.
+      </p>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section id="experience-projects" class="container-pair">
+      <div class="box">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            Field Technology Services Coordinator, Portland State University
+            (2023 - Present)
+          </li>
+          <li>
+            Audio Visual Event Technician, Portland State University (2023)
+          </li>
+          <li>
+            Field Services Technician with AV Support, Portland State University
+            (2021 - 2023)
+          </li>
+          <li>IT Technician, Clackamas Community College (2020)</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <strong
+              >[2024] Office of Information Technology - Jira Workbench
+              Workflow</strong
+            >
+            - UX research and interface redesign.
+            <a href="https://nthdesign.co/case-1">Case Study</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section id="skills-tools" class="container-pair">
+      <div class="box">
+        <h2>Skills</h2>
+        <ul>
+          <li>Cross-functional Collaboration</li>
+          <li>Presenting & Storytelling</li>
+          <li>Design System Integration</li>
+          <li>Dashboard & Portal Design</li>
+          <li>UX/UI & Product Design</li>
+          <li>Mobile & Desktop Design</li>
+          <li>User Research</li>
+          <li>Usability Testing</li>
+          <li>Layout & Typography</li>
+          <li>Information Architecture</li>
+          <li>User Flow Mapping</li>
+          <li>Prototyping & Wireframing</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h2>Tools</h2>
+        <ul>
+          <li>Figma</li>
+          <li>PaintTool Sai</li>
+          <li>Framer</li>
+          <li>Google Workspace</li>
+          <li>Microsoft Office Suite</li>
+          <li>JIRA</li>
+          <li>Confluence</li>
+          <li>SCCM</li>
+          <li>Systems Administration</li>
+          <li>GitHub</li>
+          <li>VSCode</li>
+          <li>
+            <strong>Programming Languages:</strong> C++, C, Python,
+            HTML/CSS/JavaScript
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container-pair">
+      <div class="box text-center">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript will be added in a later commit -->
   </body>
 </html>
