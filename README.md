@@ -2,6 +2,12 @@
 
 This repository contains my personal portfolio website.
 
+## Live Demo
+
+Deploy using GitHub Pages.For user `nthcasper`,the site is available at:  
+https://nthcasper.github.io
+
+
 ## How to Run
 
 1. Create a new repository (or use this one).
@@ -10,8 +16,8 @@ This repository contains my personal portfolio website.
    - Go to **Settings → Pages**.
    - Under **Source**, select the `main` branch.
    - Click **Save**.
-4. For a repository named `nthcasper', the site will be available at:  
-   https://nthcasper.github.io/
+4. For user `nthcasper` and repository `testing-123`, the site is available at:  
+https://nthcasper.github.io/testing-123/
 
 ## Technologies Used
 
