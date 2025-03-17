@@ -20,3 +20,43 @@ body {
   padding-top: 56px;
   scroll-behavior: smooth;
 }
+
+/* -----------------------------------------
+   Navbar
+-------------------------------------------- */
+.navbar {
+  transition: background 0.3s ease-in-out;
+}
+.navbar .nav-link {
+  color: var(--color-white);
+  transition: color 0.3s ease-in-out;
+}
+.navbar .nav-link:hover {
+  color: var(--color-box-bg);
+}
+
+/* -----------------------------------------
+   Hero Section
+-------------------------------------------- */
+.hero-section {
+  position: relative;
+  height: 80vh;
+  background: linear-gradient(
+    to bottom,
+    var(--color-accent),
+    var(--color-body-bg)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-box-bg);
+  animation: fadeIn 1.5s ease-in-out;
+}
