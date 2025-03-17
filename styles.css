@@ -1,18 +1,22 @@
-/* Basic reset and typography */
+/* -----------------------------------------
+   CSS Variables for a Clean, Unified Palette
+-------------------------------------------- */
+:root {
+  --color-body-bg: #0f084b; /* Main dark background */
+  --color-box-bg: #a6cfd5; /* Light background for boxes */
+  --color-white: #ffffff; /* White text for dark backgrounds */
+  --color-dark: #0d0221; /* Dark text for light backgrounds */
+  --color-accent: #26408b; /* Accent color */
+  --color-link-hover: #1e2f66; /* Hover state for links */
+}
+
+/* -----------------------------------------
+   Global Styles
+-------------------------------------------- */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
-header,
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-}
-main {
-  padding: 20px;
+  background-color: var(--color-body-bg);
+  color: var(--color-white);
+  padding-top: 56px;
+  scroll-behavior: smooth;
 }
